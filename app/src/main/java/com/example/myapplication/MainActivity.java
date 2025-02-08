@@ -26,8 +26,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onClickBatton(View view) {
+    public void onClickButton(View view) {
         count++;
+        TextView txt= findViewById(R.id.txtCounter);
+        txt.setText(count.toString());
+    }
+
+    public void onClickButton1(View view) {
+        count += 2;
         TextView txt= findViewById(R.id.txtCounter);
         txt.setText(count.toString());
     }
