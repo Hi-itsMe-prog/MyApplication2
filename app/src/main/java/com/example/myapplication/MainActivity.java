@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
     }
     protected void onRestoreInstanceState(Bundle SavedState){
         super.onRestoreInstanceState(SavedState);
-        if(SavedState != null && SavedState.containsKey("Klic")){
-            count = SavedState.getInt("Klic");
+        if(SavedState != null && SavedState.containsKey("Сlick")){
+            count = SavedState.getInt("Сlick");
         }
         Log.d("Instens","get");
         Toast.makeText(this, "get",Toast.LENGTH_LONG).show();
