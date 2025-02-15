@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState != null && savedInstanceState.containsKey("Click")) {
             count = savedInstanceState.getInt("Click");
             TextView txt = findViewById(R.id.txtCounter);
+
             txt.setText(count.toString());
         }
         Log.d("Instance", "get");
