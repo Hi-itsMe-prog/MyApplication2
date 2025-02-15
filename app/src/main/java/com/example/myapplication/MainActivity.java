@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         if(SavedState != null && SavedState.containsKey("Сlick")){
             count = SavedState.getInt("Сlick");
         }
-        Log.d("Instens","get");
+        Log.d("Instance","get");
         Toast.makeText(this, "get",Toast.LENGTH_LONG).show();
     }
     public void onClickButton(View view) {
