@@ -24,20 +24,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
-
-
-        if (savedInstanceState != null) {
-            count = savedInstanceState.getInt("Click", 0);
-            TextView txt = findViewById(R.id.txtCounter);
-            txt.setText(count.toString());
-        }
+        Toast.makeText(this, "onCreate", Toast.LENGTH_LONG).show();
     }
-
     @Override
-    protected void onStart() {
+    protected void onStart()
+    {
         super.onStart();
         Log.d("Instance", "onStart");
+        Toast.makeText(this, "onStart", Toast.LENGTH_LONG).show();
     }
 
     @Override
