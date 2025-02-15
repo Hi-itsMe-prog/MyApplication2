@@ -40,24 +40,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d("Instance", "onResume");
+        Toast.makeText(this, "onResume", Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         Log.d("Instance", "onPause");
+        Toast.makeText(this, "onPause", Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
         Log.d("Instance", "onStop");
+        Toast.makeText(this, "onStop", Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.d("Instance", "onDestroy");
+        Toast.makeText(this, "onDestroy", Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -65,7 +69,9 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putInt("Click", count);
         Log.d("Instance", "onSave");
+        Toast.makeText(this, "onSave", Toast.LENGTH_LONG).show();
     }
+
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -76,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             txt.setText(count.toString());
         }
         Log.d("Instance", "get");
+        Toast.makeText(this, "onRestore",Toast.LENGTH_LONG).show();
     }
 
     public void onClickButton(View view) {
