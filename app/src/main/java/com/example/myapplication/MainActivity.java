@@ -12,8 +12,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.text.BreakIterator;
-
 public class MainActivity extends AppCompatActivity {
     private Integer count = 0;
     @Override
@@ -27,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         Toast.makeText(this, "onCreate", Toast.LENGTH_LONG).show();
+        TextView txt = findViewById(R.id.txtCounter);
+        txt.setText(count.toString());
+
+        Toast.makeText(this, "onCreate", Toast.LENGTH_LONG).show();
+
     }
     @Override
     protected void onStart()
